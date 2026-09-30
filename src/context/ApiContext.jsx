@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 const ApiContext = createContext("");
 
 export function ApiProvider({ children }) {
-    const API_URL = "http://localhost:8000"
+    const API_URL = "https://quartzkraft-api.onrender.com"
 
     return (
         <ApiContext.Provider value={API_URL}>

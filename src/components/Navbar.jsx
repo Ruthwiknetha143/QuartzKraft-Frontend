@@ -28,7 +28,7 @@ let Navbar = () => {
               )
             })}
           </ul>
-          <Link href="#contact" className="btn btn-secondary rounded-0 px-4 py-2">
+          <Link to='/get-in-touch' className="btn rounded-0 px-4 py-2 text-white">
             Get In Touch
           </Link>
         </div>

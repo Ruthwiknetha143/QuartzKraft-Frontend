@@ -46,7 +46,7 @@ const Home = () => {
                 <div className="container text-center">
                     <h1>Built on Craftsmanship.</h1>
                     <h3>Driven by Partnership.</h3>
-                    <button className='btn btn-primary explore-btn'>Explore Our Collections</button>
+                    <Link to="/collections" className='btn btn-primary explore-btn'>Explore Our Collections</Link>
                 </div>
             </section>
             <section>

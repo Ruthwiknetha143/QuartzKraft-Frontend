@@ -24,9 +24,9 @@ const Collections = () => {
   }, [API_URL])
 
   return (
-    <section id="collections">
+    <section id="collections" className='py-5'>
       {collections.map((collection) => (
-        <div className="container mt-5 mb-5">
+        <div className="container py-3">
 
           <h1>{collection[0]?.category}</h1>
 
@@ -39,7 +39,6 @@ const Collections = () => {
                 >
                   <img
                     src={value.img1}
-                    alt={value.title}
                     className="img-fluid"
                   />
                 </Link>
@@ -53,6 +52,7 @@ const Collections = () => {
           <div className="text-end">
             <Link
               to={`/${collection[0]?.category.split(" ")[0]}`}
+              className='fs-5 text-dark'
             >
               Explore Collection
             </Link>

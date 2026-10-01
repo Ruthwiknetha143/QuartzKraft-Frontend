@@ -23,13 +23,13 @@ let Offerings = () => {
 
     return (
         <section id="offerings">
-            <section id="silica">
-                <div className="container h-100">
-                    <div className="row h-100 align-items-center">
-                        <div className="col">
-                            <img src={images[0]?.image} alt="" height="546px" width="549px" />
+            <section className='low'>
+                <div className="container py-5">
+                    <div className="row py-5 g-5 align-items-center">
+                        <div className="col-md-6">
+                            <img className='img-fluid' src={images[0]?.image} alt="" />
                         </div>
-                        <div className="col">
+                        <div className="col-md-6">
                             <div className="d-flex flex-column justify-content-center gap-3">
                                 <h1>Low & Zero Silica Surfaces</h1>
                                 <p>As part of our material innovation efforts, QuartzKraft currently manufactures both low-silica and zero-silica engineered surfaces.</p>
@@ -55,56 +55,56 @@ let Offerings = () => {
                     </div>
                 </div>
             </section>
-            <section id="handcrafted">
-                <div className="container h-100">
-                    <div className="row h-100 align-items-center">
-                        <div className="col">
-                            <div className="d-flex flex-column gap-3">
-                                <h1>Handcrafted Quartz Surfaces.<br />
-                                    Built with Intention, for Inspired Spaces</h1>
-                                <p>Engineered with premium materials and crafted with intricate veining, QuartzKraft surfaces combine the beauty of natural stone with the reliability of disciplined manufacturing.</p>
-                                <Link to="/collections">Our Collections</Link>
-                            </div>
+            <section>
+                <div className="container py-5">
+                    <div className="row py-5 g-5 align-items-center">
+                        <div className="col-md-6">
+                            <h1>Handcrafted Quartz Surfaces.<br />
+                                Built with Intention, for Inspired Spaces</h1>
+                            <p className='py-4'>Engineered with premium materials and crafted with intricate veining, QuartzKraft surfaces combine the beauty of natural stone with the reliability of disciplined manufacturing.</p>
+                            <Link to="/collections" className='fs-5 text-dark'>Our Collections</Link>
                         </div>
-                        <div className="col">
-                            <img src={images[1]?.image} alt="" height="424px" width="566px" />
+                        <div className="col-md-6">
+                            <img className='img-fluid' src={images[1]?.image} alt="" />
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="qu360">
-                <div className="container h-100">
-                    <div className="d-flex h-100 flex-column justify-content-center align-items-center gap-3">
-                        <h1>QuartzKraft 360</h1>
-                        <div className="row">
-                            <div className="col">
+            <section className='qu360'>
+                <div className="container py-5">
+                    <div className="row py-5 g-3">
+                        <h1 className='text-center py-3'>QuartzKraft 360</h1>
+                        <div className="col-md-6">
+                            <div className='py-4'>
                                 <p>QuartzKraft has cut-to-size fabrication capabilities to support projects with customized Quartz surface countertops.</p>
                                 <p>Our fabrication facility combines advanced CNC technology with skilled craftsmanship to produce precisely finished quartz components tailored to specific architectural and design requirements.</p>
                                 <p>We offer a range of edge finishing options depending on the application and design preference. Common profiles include straight, eased edge, pencil round, small bevel, demi-bullnose and full bullnose.</p>
-                                <div className="d-flex gap-3 pt-4">
-                                    {images.slice(2,4).map(value => {
-                                        return(
-                                            <img src={value.image} height='196px' width='262px'/>
-                                        )
-                                    })}
-                                </div>
                             </div>
-                            <div className="col">
-                                <img src={images[4]?.image} alt="" height="462px" width="565px" />
+                            <div className="row g-3">
+                                {images.slice(2, 4).map(value => {
+                                    return (
+                                        <div className="col-md-6">
+                                            <img className='img-fluid' src={value.image} />
+                                        </div>
+                                    )
+                                })}
                             </div>
+                        </div>
+                        <div className="col-md-6">
+                            <img className='img-fluid' src={images[4]?.image} alt="" />
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="ravileela">
-                <div className="container h-100">
-                    <div className="d-flex flex-column h-100 align-items-center justify-content-center">
-                        <h1>Explore Granite</h1>
-                        <Link to="https://www.ravileelagranites.com/">Ravileela Granites</Link>
+            <section className='ravileela'>
+                <div className="container py-5">
+                    <div className="text-center py-5">
+                        <h1 className='text-white'>Explore Granite</h1>
+                        <Link to="https://www.ravileelagranites.com/" className='fs-5 text-white'>Ravileela Granites</Link>
                     </div>
                 </div>
             </section>
-        </section>
+        </section >
     )
 }
 

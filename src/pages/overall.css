@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 
-.navbar{
-    .btn{
+.navbar {
+    .btn {
         background-color: #4a2c1a;
     }
-    .btn:hover{
+
+    .btn:hover {
         background-color: #c2b8ae;
     }
 }
@@ -38,18 +39,41 @@
 }
 
 .trending,
-.explore {
+.explore,
+.technical,
+.design,
+.supply-card,
+.low {
     background-color: #f5f1e8;
 }
 
-.difference{
+.difference,
+.qu360 {
     background-color: #fefcf8;
 }
 
 .q360 {
-    color: white;
-    height: 500px;
     background-image: url("https://quartzkraft.com/wp-content/uploads/2026/04/QuartzKraft-360-1-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.partner {
+    background-image: url('https://quartzkraft.com/wp-content/uploads/2026/04/Partner-With-Us-scaled.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.us {
+    background-color: #e6e1d8;
+}
+
+.ravileela {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("https://quartzkraft.com/wp-content/uploads/2026/04/Supporting-Our-Partners.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

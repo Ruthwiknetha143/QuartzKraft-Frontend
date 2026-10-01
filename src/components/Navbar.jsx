@@ -3,32 +3,38 @@ import { Link } from "react-router-dom"
 
 let Navbar = () => {
 
-    let navigation = ["about us", "offerings", "resources", "collections", "partner with us"]
-    
-    return (
-        <nav className="shadow-sm">
-            <div className="container h-100">
-                <div className="h-100 row align-items-center">
-                    <div className="col">
-                        <Link to="/" id="qk" className="text-decoration-none"><span>Quartz</span>Kraft</Link>
-                    </div>
+  let navigation = ["about us", "offerings", "resources", "collections", "partner with us"]
 
-                    <div className="col">
-                        <ul className="d-flex justify-content-center gap-3 list-unstyled text-uppercase mt-3">
-                            {navigation.map(value => {
-                                let path = "/" + value.split(" ").join("-")
-                                return <li><Link to={path} className="text-decoration-none fw-bold">{value}</Link></li>
-                            })}
-                        </ul>
-                    </div>
-
-                    <div className="col text-center">
-                        <Link to="/get-in-touch"><button className="p-1 px-3 text-capitalize text-white">get in touch</button></Link>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    )
+  return (
+    <nav className="navbar navbar-expand-lg shadow-sm py-3 sticky-top">
+      <div className="container">
+        <Link className="navbar-brand fs-1 fw-light" to="/">
+          <span className="text-dark">Quartz</span><span className="text-secondary">Kraft</span>
+        </Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarScroll">
+          <ul className="navbar-nav mx-auto gap-lg-2">
+            {navigation.map(value => {
+              let path = "/" + value.split(" ").join("-")
+              return(
+                <>
+                <li className="nav-item">
+                  <Link to={path} className="nav-link text-dark text-uppercase">{value}</Link>
+                </li>
+                </>
+              )
+            })}
+          </ul>
+          <Link href="#contact" className="btn btn-secondary rounded-0 px-4 py-2">
+            Get In Touch
+          </Link>
+        </div>
+      </div>
+    </nav>
+  )
 }
 
 export default Navbar;

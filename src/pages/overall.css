@@ -4,283 +4,56 @@
     box-sizing: border-box;
 }
 
-#home {
-    #craftsmanship {
-        height: 550px;
-        background-image: url("https://quartzkraft.com/wp-content/uploads/2026/04/Aurelia-Mist-ful-slab-2048x1024.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        button {
-            width: 17%;
-            padding: 10px;
-            border: none;
-            background-color: #4a2c1a;
-        }
-    }
-
-    #engineered {
-        height: 800px;
-
-        a {
-            color: black;
-        }
-
-        img {
-            margin: 9px;
-        }
-
-        a:hover {
-            color: #4a2c1a;
-        }
-    }
-
-    #trusted {
-        height: 500px;
-        background-color: #503727;
-
-        a {
-            color: white;
-        }
-
-        a:hover {
-            color: #a36e4c;
-        }
-    }
-
-    #trending,
-    #explore {
-        height: 500px;
-        background-color: #f5f1e8;
-    }
-
-    #voice {
-        height: 500px;
-    }
-
-    #offerings {
-        height: 1000px;
-
-        img {
-            height: 386px;
-            width: 580px;
-        }
-    }
-
-    #q360 {
-        color: white;
-        height: 500px;
-        background-image: url("https://quartzkraft.com/wp-content/uploads/2026/04/QuartzKraft-360-1-scaled.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        .d-flex {
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-
-        a {
-            color: white;
-        }
-    }
-
-    #difference {
-        height: 750px;
-        background-color: #fefcf8;
-
-        a {
-            color: black;
-            font-size: 20px;
-        }
-    }
+.explore-btn {
+    background-color: #4a2c1a;
+    border: none;
+    border-radius: 0;
+    padding: 10px 25px;
+    box-shadow: 8px 7px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
-#about {
-    h4 {
-        line-height: 75px;
-    }
-
-    a {
-        color: black;
-        font-size: 24px;
-    }
-
-    #story,
-    #difference,
-    #compromise,
-    #chain,
-    #factory {
-        padding: 50px 0px 50px 0px;
-    }
-
-    #story {
-        background-color: #f5f1e8;
-    }
-
-    #factory{
-        background-color: #d8c3a5;
-    }
-
-    #difference {
-        .d-flex {
-            col {
-                color: #f5f1e8;
-            }
-        }
-    }
-    #compromise{
-        background-color: black;
-        color: white;
-    }
+.explore-btn:hover {
+    background-color: black;
+    font-size: 20px;
 }
 
-#resources {
-    #certifications {
-        height: 450px;
-    }
-
-    #specs {
-        height: 350px;
-        background-color: #f5f1e8;
-    }
-
-    #supply {
-        height: 500px;
-
-        #promise {
-            div {
-                background-color: #f5f1e8;
-                text-align: center;
-                height: 251px;
-                width: 369px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                p {
-                    width: 75%;
-                }
-            }
-        }
-    }
+.build {
+    background-image: url("https://quartzkraft.com/wp-content/uploads/2026/04/Aurelia-Mist-ful-slab-2048x1024.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 175px 0px;
 }
 
-#partner {
-    #withUs {
-        height: 500px;
-        background-image: url("https://quartzkraft.com/wp-content/uploads/2026/04/Partner-With-Us-scaled.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        .d-flex {
-            background-color: rgba(245, 241, 232, 0.7);
-        }
-    }
-
-    a {
-        color: black;
-        font-size: 20px;
-    }
-
-    #built {
-        height: 650px;
-        background-color: #f5f1e8;
-    }
-
-    #design {
-        height: 500px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("https://quartzkraft.com/wp-content/uploads/2026/04/Aurelia-Mist-ful-slab-2048x1024.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        .d-flex {
-            background-color: rgba(74, 44, 26, 0.5);
-        }
-    }
+.trusted {
+    background-color: #4a2c1a;
 }
 
-#offerings {
-    #silica {
-        height: 750px;
-        background-color: #f5f1e8;
-    }
-
-    #handcrafted {
-        height: 600px;
-        background: linear-gradient(130deg, white 50%, #4a2c1a 50%);
-
-        a {
-            color: black;
-            font-size: 20px;
-        }
-    }
-
-    #qu360 {
-        height: 750px;
-        background-color: #fefcf8;
-    }
-
-    #ravileela {
-        height: 300px;
-        color: white;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("https://quartzkraft.com/wp-content/uploads/2026/04/Supporting-Our-Partners.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        a {
-            color: white;
-            font-size: 20px;
-        }
-    }
+.trending,
+.explore {
+    background-color: #f5f1e8;
 }
 
-#collections {
-    a {
-        color: black;
-        font-size: 20px;
-    }
+.difference{
+    background-color: #fefcf8;
 }
 
-#getintouch {
-    height: 600px;
-
-    h1 {
-        line-height: 100px;
-    }
-
-    form {
-
-        input,
-        select {
-            padding: 10px;
-            width: 250px;
-        }
-
-        textarea {
-            width: 525px;
-            padding: 10px;
-            height: 100px;
-        }
-
-        button {
-            border: none;
-            border-radius: 25px;
-            padding: 10px;
-            width: 35%;
-            color: white;
-            background-color: #a36e4c;
-        }
-    }
+.q360 {
+    color: white;
+    height: 500px;
+    background-image: url("https://quartzkraft.com/wp-content/uploads/2026/04/QuartzKraft-360-1-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #product {
     background-color: #fefcf8;
+
+    .headings {
+        color: #d1b894;
+    }
 
     table {
         width: 100%;
@@ -322,10 +95,5 @@
         tr:last-child td {
             border-bottom: none;
         }
-    }
-
-    a {
-        color: black;
-        font-size: 20px;
     }
 }

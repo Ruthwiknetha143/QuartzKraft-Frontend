@@ -24,22 +24,21 @@ const Category = () => {
   }, [API_URL, category])
 
   return (
-    <section className="category">
-      <div className="container">
-        <h1 className="mt-5">{category} Collection</h1>
-        <div className="row gap-5 mt-5 mb-5">
+    <section>
+      <div className="container py-5">
+        <h1 className="py-3">{category} Collection</h1>
+        <div className="row g-5">
           {tiles.map(tile => (
-          <div className="col">
-            <Link to={`/${category}/${tile.title}`}>
-              <img
-                src={tile.img1}
-                height="177px"
-                width="353px"
-              />
-            </Link>
-            <p>{tile.title}</p>
-          </div>
-        ))}
+            <div className="col-md-4">
+              <Link to={`/${category}/${tile.title}`}>
+                <img
+                  className="img-fluid"
+                  src={tile.img1}
+                />
+              </Link>
+              <p>{tile.title}</p>
+            </div>
+          ))}
         </div>
       </div>
 

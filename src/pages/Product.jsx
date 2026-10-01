@@ -7,8 +7,11 @@ const Product = () => {
   const { category, title } = useParams()
 
   const [tile, setTile] = useState({})
+  const [mainImage, setMainImage] = useState(null)
 
   useEffect(() => {
+    setMainImage(tile?.img1);
+
 
     const fetchTile = async () => {
       try {
@@ -26,28 +29,65 @@ const Product = () => {
 
     fetchTile()
 
-  }, [API_URL, category, title])
+  }, [API_URL, category, title, tile?.img1])
 
   return (
-    <section id='product'>
-      <div className="container pt-5 pb-5">
-        <div className="row align-items-center">
-          <aside className='col'>
-            <img src={tile.img1} alt="" height='356px' width='600px' />
-            {/* <img src={tile.img2} alt="" height='516px' width='580px'/> */}
-          </aside>
-          <aside className='col'>
+    <section id="product" className="py-5">
+      <div className="container py-3">
+        <div className="row g-5">
+          <div className="col-md-6">
+
+            <div>
+              <img
+                src={mainImage}
+                alt={tile.title}
+                className="img-fluid"
+              />
+            </div>
+
+            {/* Thumbnails */}
+            <div className="d-flex gap-3 mt-3">
+
+              <img
+                src={tile.img1}
+                alt=""
+                width="168"
+                height="167"
+                className="object-fit-cover"
+                style={{ cursor: "pointer" }}
+                onClick={() => setMainImage(tile.img1)}
+              />
+
+              <img
+                src={tile.img2}
+                alt=""
+                width="168"
+                height="167"
+                className="object-fit-cover"
+                style={{ cursor: "pointer" }}
+                onClick={() => setMainImage(tile.img2)}
+              />
+
+            </div>
+          </div>
+          <div className="col-md-6">
             <h1>{tile.title}</h1>
-            <p>Description</p>
-            <p>{tile.desc}</p>
-            <p>Specifications</p>
-            <table>
+
+            <div className='py-2'>
+              <h5 className="headings">Description</h5>
+              <p>{tile.desc}</p>
+            </div>
+
+            <h5 className="headings">Specifications</h5>
+
+            <table className="table table-bordered">
               <thead>
                 <tr>
-                  <th>Attribute</th>
-                  <th>Details</th>
+                  <th className="text-center">Attribute</th>
+                  <th className="text-center">Details</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>Collection</td>
@@ -67,13 +107,19 @@ const Product = () => {
                 </tr>
               </tbody>
             </table>
-            <div className='mt-4 mb-5'>
-              <Link to="/get-in-touch">Start Your Order</Link>
-            </div>
-          </aside>
+
+            <Link
+              to="/get-in-touch"
+              className="fs-4 text-dark"
+            >
+              Start Your Order
+            </Link>
+          </div>
+
         </div>
       </div>
     </section>
+
   )
 }
 

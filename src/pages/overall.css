@@ -43,13 +43,24 @@ section {
     background-color: #4a2c1a;
 }
 
+.craftsmanship{
+    border: #4a2c1a solid 0.1px;
+    background-color: #f5f1e8;
+}
+
 .trending,
 .explore,
 .technical,
 .design,
 .supply-card,
-.low {
+.low,
+.story,
+.quality {
     background-color: #f5f1e8;
+}
+
+.factory{
+    background-color: #d8c3a5;
 }
 
 .difference,

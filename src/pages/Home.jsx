@@ -51,7 +51,7 @@ const Home = () => {
             </section>
             <section>
                 <div className="container py-5">
-                    <div className="row py-5 align-items-center">
+                    <div className="row py-5 g-5 align-items-center">
                         <div className="col-md-6">
                             <h1>Engineered Surfaces. Crafted with Purpose.</h1>
                             <p>QuartzKraft creates engineered surfaces that bring together craftsmanship, precision, and global expertise. Rooted in deep industry expertise, we blend manufacturing with a strong sense of craftsmanship to deliver surfaces that elevate spaces across the world.</p>
@@ -72,7 +72,7 @@ const Home = () => {
             </section>
             <section className='trusted'>
                 <div className="container py-5">
-                    <div className="row py-5 align-items-center">
+                    <div className="row py-5 g-5 align-items-center">
                         <div className="col-md-6">
                             <img className="img-fluid" src={images[4]?.image} alt="" />
                         </div>
@@ -148,7 +148,7 @@ const Home = () => {
             </section>
             <section className='difference'>
                 <div className="container py-5">
-                    <div className="row py-5 align-items-center">
+                    <div className="row py-5 g-5 align-items-center">
                         <div className="col-md-6">
                             <div className="d-flex flex-column">
                                 <h1 className="py-4">The QuartzKraft Difference</h1>
